@@ -336,56 +336,11 @@ cluster_id_annotation:
     "3": "3"
     "4": "4"
 plot_chip_params:
-    min_value: 0
-    max_value: 5
-    50bp_foxa1_e2_mcf7_th_04: {min_value: 100, max_value: 700, width: 6, height: 4}
-    50bp_foxa1_e2_mcf7_th_05: {min_value: "-1000", max_value: "-1000", width: 6, height: 6}
-    50bp_foxa1_e2_mcf7_th_06: {min_value: 100, max_value: 700, width: 6, height: 4}
-    50bp_foxa1_e2_mcf7_th_08: {min_value: 100, max_value: 700, width: 6, height: 4}
-    50bp_er_e2_mcf7_th_04: {min_value: 50, max_value: 400, width: 6, height: 6}
-    50bp_er_e2_mcf7_th_05: {min_value: "-1000", max_value: "-1000", width: 6, height: 6}
-    50bp_er_e2_mcf7_th_06: {min_value: 50, max_value: 400, width: 6, height: 4}
-    50bp_er_e2_mcf7_th_08: {min_value: 50, max_value: 400, width: 6, height: 4}
-    50bp_encode_accepted_chrom_chrY_removed_non_overlapping: {min_value: "-1000", max_value: "-1000",  width: 8, height: 12} 
-    50bp_lyl1_non_overlapping_chrY_removed: {min_value: "-1000", max_value: "-1000",  width: 8, height: 6} 
-    50bp_pu1_q_30_nooverlap: {min_value: "-1000", max_value: "-1000",  width: 8, height: 12}
-    50bp_pu1_q_25_nooverlap: {min_value: "-1000", max_value: "-1000",  width: 8, height: 12}
-    50bp_pu1_q_20_nooverlap: {min_value: "-1000", max_value: "-1000",  width: 8, height: 12}
-    50bp_pu1_q_15_nooverlap: {min_value: "-1000", max_value: "-1000",  width: 6, height: 4}
-    50bp_pu1_q_10_nooverlap: {min_value: "-1000", max_value: "-1000",  width: 6, height: 4}
-    50bp_pu1_q_05_nooverlap: {min_value: "-1000", max_value: "-1000",  width: 6, height: 4}
-    50bp_pu1_q_01_nooverlap: {min_value: "-1000", max_value: "-1000",  width: 6, height: 4}
-    50bp_pu1_q_001_nooverlap: {min_value: "-1000", max_value: "-1000",  width: 6, height: 4}
-    50bp_ENCFF705QAK_rep2_non_overlapping: {min_value: "-1000", max_value: "-1000",  width: 6, height: 6}
-    50bp_wo_pt4_er_th_05: {min_value: "-1000", max_value: "-1000",  width: 6, height: 6}
-    50bp_unique_carroll_encode_chrY_removed_non_overlapping: {min_value: "-1000", max_value: "-1000",  width: 6, height: 8}
-    50bp_w_pt4_er_th_05: {min_value: "-1000", max_value: "-1000",  width: 8, height: 12}
-    #50bp_ENCFF705QAK_rep2_non_overlapping_c: {min_value: "-4", max_value: "4",  width: 6, height: 6}
-    50bp_wo_pt4_foxa1_th_05: {min_value: "-1000", max_value: "-1000",  width: 6, height: 6}
-    50bp_w_pt4_foxa1_th_05: {min_value: "-1000", max_value: "-1000",  width: 8, height: 12}
-    50bp_subsampled_wo_pt4_er_th_05 : {min_value: "-1000", max_value: "-1000",  width: 6, height: 6}
-    50bp_subsampled_wo_pt4_foxa1_th_05 : {min_value: "-1000", max_value: "-1000",  width: 6, height: 6}
-    50bp_lyl1_common_for_dilution : {min_value: "-1000", max_value: "-1000",  width: 6, height: 6}
-    50bp_pu1_common_for_dilution : {min_value: "-1000", max_value: "-1000",  width: 6, height: 6}
-    50bp_ctcf_common_for_dilution : {min_value: "-1000", max_value: "-1000",  width: 6, height: 6}
     50bp_lyl1_remap_non_overlapping: {min_value: "-1000", max_value: "-1000",  width: 8, height: 6}
     50bp_pu1_encode_peaks_non_overlapping: {min_value: "-1000", max_value: "-1000",  width: 8, height: 6}
     50bp_ctcf_enc_carroll_etoh_non_overlapping: {min_value: "-1000", max_value: "-1000",  width: 6, height: 8}
-    50bp_lyl1_remap_common: {min_value: "-1000", max_value: "-1000",  width: 6, height: 6}
-    50bp_pu1_encode_peaks_common: {min_value: "-1000", max_value: "-1000",  width: 6, height: 6}
-    50bp_ctcf_enc_carroll_etoh_common: {min_value: "-1000", max_value: "-1000",  width: 6, height: 6}
-    50bp_er_th_05_common_young_inh:  {min_value: "-1000", max_value: "-1000",  width: 6, height: 6}
-    50bp_foxa1_th_05_common_young_inh:  {min_value: "-1000", max_value: "-1000",  width: 6, height: 6}
     50bp_er_e2_mcf7_th_05: {min_value: "-1000", max_value: "-1000",  width: 6, height: 6}
     50bp_foxa1_e2_mcf7_th_05: {min_value: "-1000", max_value: "-1000",  width: 6, height: 6}
-   
-    50bp_er_etoh_mcf7_th_05: {min_value: "-1000", max_value: "-1000",  width: 6, height: 6}
-    50bp_foxa1_etoh_mcf7_th_05: {min_value: "-1000", max_value: "-1000",  width: 6, height: 6}
-    
-    50bp_wo_pt4_er_etoh_mcf7_th_05: {min_value: "-1000", max_value: "-1000",  width: 6, height: 6} 
-    50bp_wo_pt4_foxa1_etoh_mcf7_th_05: {min_value: "-1000", max_value: "-1000",  width: 6, height: 6}
-    50bp_er_carroll_encode_non_overlapping: {min_value: "-1000", max_value: "-1000",  width: 6, height: 6}
-    50bp_foxa1_carroll_encode_non_overlapping: {min_value: "-1000", max_value: "-1000",  width: 6, height: 6}
 
    
 
