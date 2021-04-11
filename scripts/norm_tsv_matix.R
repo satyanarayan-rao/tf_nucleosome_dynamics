@@ -1,0 +1,6 @@
+args = commandArgs(trailingOnly = T)
+dt = read.table(args[1], sep = "\t", header = F, stringsAsFactors = F)
+m_dt = mean(as.matrix(dt))
+v_dt = sd(as.matrix(dt))
+c_dt = round ((dt - m_dt)/v_dt , 3)
+write.table(c_dt, file = args[2], row.names =F, col.names = F, sep = "\t", quote = F)
