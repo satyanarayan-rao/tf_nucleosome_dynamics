@@ -1,0 +1,491 @@
+system: TF-Nuc
+
+bed_annotation:
+    lyl1_remap_non_overlapping: "LYL1"
+    pu1_encode_peaks_non_overlapping: "PU.1"
+    ctcf_enc_carroll_etoh_non_overlapping: "CTCF"
+    lyl1_remap_common: "LYL1-Common"
+    pu1_encode_peaks_common: "PU1-Common"
+    ctcf_enc_carroll_etoh_common: "CTCF-Common"
+    er_e2_mcf7_th_05: "ER-E2-SD-05"
+    foxa1_e2_mcf7_th_05: "FOXA1-E2-SD-05"
+    
+    
+tfbs_genome_annotation:
+    lyl1_remap_non_overlapping: metadata/hg38.genome
+    pu1_encode_peaks_non_overlapping: metadata/hg38.genome 
+    ctcf_enc_carroll_etoh_non_overlapping: metadata/hg38.genome
+    lyl1_remap_common: metadata/hg38.genome
+    pu1_encode_peaks_common: metadata/hg38.genome
+    ctcf_enc_carroll_etoh_common: metadata/hg38.genome
+    er_e2_mcf7_th_05: metadata/hg38.genome
+    foxa1_e2_mcf7_th_05: metadata/hg38.genome
+         
+    
+bedgz_annotation:
+    mcf7_merged: data/cfDNA/inhouse_smk/uniquely_mapped_hg38_bedgz/mcf7_merged_hg38-and-mm10_unique_hg38_sorted_center.bed.gz   
+    pt65_merged: data/cfDNA/inhouse_smk/uniquely_mapped_hg38_bedgz/pt65_merged_hg38-and-mm10_unique_hg38_sorted_center.bed.gz 
+    pt4_merged: data/cfDNA/inhouse_smk/uniquely_mapped_hg38_bedgz/pt4_merged_hg38-and-mm10_unique_hg38_sorted_center.bed.gz  
+    ih02: data/cfDNA/IH02/combined_bed/IH02_sorted_pairs_center.bed.gz
+    ic35: data/cfDNA/IC35/combined_bed/IC35_sorted_pairs_center.bed.gz
+    ic15: data/cfDNA/IC15/combined_bed/IC15_sorted_pairs_center.bed.gz
+    ic17: data/cfDNA/IC17/combined_bed/IC17_sorted_pairs_center.bed.gz
+    ic20: data/cfDNA/IC20/combined_bed/IC20_sorted_pairs_center.bed.gz 
+    ic37: data/cfDNA/IC37/combined_bed/IC37_sorted_pairs_center.bed.gz
+    
+
+sample_title:
+    ih02: "IH02"
+    ic35: "IC35"
+    ic15: "IC15-Lung"
+    ic17: "IC17-Liver"
+    ic20: "IC20-Lung" 
+    ic37: "IC37-Colon"
+    mcf7_merged: "MCF7" 
+    pt4_merged: "PT4"
+    pt65_merged: "PT65"
+
+genomic_len_dist:
+    ih02: metadata/dens_flen_IH02.tsv
+    ic35: metadata/dens_flen_IH02.tsv
+    ic15: metadata/dens_flen_IH02.tsv
+    ic17: metadata/dens_flen_IH02.tsv
+    ic20: metadata/dens_flen_IH02.tsv
+    ic37: metadata/dens_flen_IH02.tsv
+    mcf7_merged: metadata/dens_flen_IH02.tsv
+    pt65_merged: metadata/dens_flen_IH02.tsv
+    pt4_merged: metadata/dens_flen_IH02.tsv
+
+genome_size_map:
+    mcf7_merged: metadata/hg38.genome
+    pt65_merged: metadata/hg38.genome
+    pt4_merged: metadata/hg38.genome
+    ih02: metadata/hg38.genome
+    ic35: metadata/hg38.genome
+    ic15: metadata/hg38.genome
+    ic17: metadata/hg38.genome
+    ic20: metadata/hg38.genome
+    ic37: metadata/hg38.genome
+
+
+
+    
+
+flen_bigwigs:
+   
+    mcf7_merged: 
+        mcf7_merged_0_50: data/cfDNA/inhouse_smk/bigwigs/hg38/mcf7_merged_hg38-and-mm10_unique_hg38_0_50.bigwig
+        mcf7_merged_0_70: data/cfDNA/inhouse_smk/bigwigs/hg38/mcf7_merged_hg38-and-mm10_unique_hg38_0_70.bigwig
+        mcf7_merged_71_100: data/cfDNA/inhouse_smk/bigwigs/hg38/mcf7_merged_hg38-and-mm10_unique_hg38_71_100.bigwig
+        mcf7_merged_141_170: data/cfDNA/inhouse_smk/bigwigs/hg38/mcf7_merged_hg38-and-mm10_unique_hg38_141_170.bigwig
+        mcf7_merged_125_170: data/cfDNA/inhouse_smk/bigwigs/hg38/mcf7_merged_hg38-and-mm10_unique_hg38_125_170.bigwig
+        mcf7_merged_0_49: data/cfDNA/inhouse_smk/bigwigs/hg38/mcf7_merged_hg38-and-mm10_unique_hg38_0_49.bigwig
+        mcf7_merged_0_59: data/cfDNA/inhouse_smk/bigwigs/hg38/mcf7_merged_hg38-and-mm10_unique_hg38_0_59.bigwig
+        mcf7_merged_0_69: data/cfDNA/inhouse_smk/bigwigs/hg38/mcf7_merged_hg38-and-mm10_unique_hg38_0_69.bigwig
+        mcf7_merged_0_79: data/cfDNA/inhouse_smk/bigwigs/hg38/mcf7_merged_hg38-and-mm10_unique_hg38_0_79.bigwig
+        mcf7_merged_60_80: data/cfDNA/inhouse_smk/bigwigs/hg38/mcf7_merged_hg38-and-mm10_unique_hg38_60_80.bigwig
+        mcf7_merged_130_180: data/cfDNA/inhouse_smk/bigwigs/hg38/mcf7_merged_hg38-and-mm10_unique_hg38_130_180.bigwig
+## centerd flank
+        mcf7_merged_cf_30_0_49: data/cfDNA/inhouse_smk/bigwigs/hg38/mcf7_merged_hg38-and-mm10_unique_hg38_centered_flank_30_0_49.bigwig
+        mcf7_merged_cf_30_0_59: data/cfDNA/inhouse_smk/bigwigs/hg38/mcf7_merged_hg38-and-mm10_unique_hg38_centered_flank_30_0_59.bigwig
+        mcf7_merged_cf_30_0_69: data/cfDNA/inhouse_smk/bigwigs/hg38/mcf7_merged_hg38-and-mm10_unique_hg38_centered_flank_30_0_69.bigwig
+        mcf7_merged_cf_30_0_79: data/cfDNA/inhouse_smk/bigwigs/hg38/mcf7_merged_hg38-and-mm10_unique_hg38_centered_flank_30_0_79.bigwig
+        mcf7_merged_cf_30_60_80: data/cfDNA/inhouse_smk/bigwigs/hg38/mcf7_merged_hg38-and-mm10_unique_hg38_centered_flank_30_60_80.bigwig
+        mcf7_merged_cf_30_130_180: data/cfDNA/inhouse_smk/bigwigs/hg38/mcf7_merged_hg38-and-mm10_unique_hg38_centered_flank_30_130_180.bigwig      
+# fragment breakdown
+        mcf7_merged_cf_30_35_45: data/cfDNA/inhouse_smk/bigwigs/hg38/mcf7_merged_hg38-and-mm10_unique_hg38_centered_flank_30_35_45.bigwig
+        mcf7_merged_cf_30_40_49: data/cfDNA/inhouse_smk/bigwigs/hg38/mcf7_merged_hg38-and-mm10_unique_hg38_centered_flank_30_40_49.bigwig 
+        mcf7_merged_cf_30_50_59: data/cfDNA/inhouse_smk/bigwigs/hg38/mcf7_merged_hg38-and-mm10_unique_hg38_centered_flank_30_50_59.bigwig 
+        mcf7_merged_cf_30_55_64: data/cfDNA/inhouse_smk/bigwigs/hg38/mcf7_merged_hg38-and-mm10_unique_hg38_centered_flank_30_55_64.bigwig 
+    pt4_merged: 
+        pt4_merged_0_50: data/cfDNA/inhouse_smk/bigwigs/hg38/pt4_merged_hg38-and-mm10_unique_hg38_0_50.bigwig
+        pt4_merged_0_70: data/cfDNA/inhouse_smk/bigwigs/hg38/pt4_merged_hg38-and-mm10_unique_hg38_0_70.bigwig
+        pt4_merged_71_100: data/cfDNA/inhouse_smk/bigwigs/hg38/pt4_merged_hg38-and-mm10_unique_hg38_71_100.bigwig
+        pt4_merged_141_170: data/cfDNA/inhouse_smk/bigwigs/hg38/pt4_merged_hg38-and-mm10_unique_hg38_141_170.bigwig
+        pt4_merged_125_170: data/cfDNA/inhouse_smk/bigwigs/hg38/pt4_merged_hg38-and-mm10_unique_hg38_125_170.bigwig
+        pt4_merged_0_49: data/cfDNA/inhouse_smk/bigwigs/hg38/pt4_merged_hg38-and-mm10_unique_hg38_0_49.bigwig
+        pt4_merged_0_59: data/cfDNA/inhouse_smk/bigwigs/hg38/pt4_merged_hg38-and-mm10_unique_hg38_0_59.bigwig
+        pt4_merged_0_69: data/cfDNA/inhouse_smk/bigwigs/hg38/pt4_merged_hg38-and-mm10_unique_hg38_0_69.bigwig
+        pt4_merged_0_79: data/cfDNA/inhouse_smk/bigwigs/hg38/pt4_merged_hg38-and-mm10_unique_hg38_0_79.bigwig
+        pt4_merged_60_80: data/cfDNA/inhouse_smk/bigwigs/hg38/pt4_merged_hg38-and-mm10_unique_hg38_60_80.bigwig
+        pt4_merged_130_180: data/cfDNA/inhouse_smk/bigwigs/hg38/pt4_merged_hg38-and-mm10_unique_hg38_130_180.bigwig
+        pt4_merged_cf_30_0_59: data/cfDNA/inhouse_smk/bigwigs/hg38/pt4_merged_hg38-and-mm10_unique_hg38_centered_flank_30_0_59.bigwig
+        pt4_merged_cf_30_0_69: data/cfDNA/inhouse_smk/bigwigs/hg38/pt4_merged_hg38-and-mm10_unique_hg38_centered_flank_30_0_69.bigwig
+        pt4_merged_cf_30_0_79: data/cfDNA/inhouse_smk/bigwigs/hg38/pt4_merged_hg38-and-mm10_unique_hg38_centered_flank_30_0_79.bigwig
+        pt4_merged_cf_30_130_180: data/cfDNA/inhouse_smk/bigwigs/hg38/pt4_merged_hg38-and-mm10_unique_hg38_centered_flank_30_130_180.bigwig
+    pt65_merged: 
+        pt65_merged_0_50: data/cfDNA/inhouse_smk/bigwigs/hg38/pt65_merged_hg38-and-mm10_unique_hg38_0_50.bigwig
+        pt65_merged_0_70: data/cfDNA/inhouse_smk/bigwigs/hg38/pt65_merged_hg38-and-mm10_unique_hg38_0_70.bigwig
+        pt65_merged_71_100: data/cfDNA/inhouse_smk/bigwigs/hg38/pt65_merged_hg38-and-mm10_unique_hg38_71_100.bigwig
+        pt65_merged_141_170: data/cfDNA/inhouse_smk/bigwigs/hg38/pt65_merged_hg38-and-mm10_unique_hg38_141_170.bigwig
+        pt65_merged_125_170: data/cfDNA/inhouse_smk/bigwigs/hg38/pt65_merged_hg38-and-mm10_unique_hg38_125_170.bigwig
+        pt65_merged_0_49: data/cfDNA/inhouse_smk/bigwigs/hg38/pt65_merged_hg38-and-mm10_unique_hg38_0_49.bigwig
+        pt65_merged_0_59: data/cfDNA/inhouse_smk/bigwigs/hg38/pt65_merged_hg38-and-mm10_unique_hg38_0_59.bigwig
+        pt65_merged_0_69: data/cfDNA/inhouse_smk/bigwigs/hg38/pt65_merged_hg38-and-mm10_unique_hg38_0_69.bigwig
+        pt65_merged_0_79: data/cfDNA/inhouse_smk/bigwigs/hg38/pt65_merged_hg38-and-mm10_unique_hg38_0_79.bigwig
+        pt65_merged_60_80: data/cfDNA/inhouse_smk/bigwigs/hg38/pt65_merged_hg38-and-mm10_unique_hg38_60_80.bigwig
+        pt65_merged_130_180: data/cfDNA/inhouse_smk/bigwigs/hg38/pt65_merged_hg38-and-mm10_unique_hg38_130_180.bigwig
+        pt65_merged_cf_30_0_49: data/cfDNA/inhouse_smk/bigwigs/hg38/pt65_merged_hg38-and-mm10_unique_hg38_centered_flank_30_0_49.bigwig
+        pt65_merged_cf_30_0_59: data/cfDNA/inhouse_smk/bigwigs/hg38/pt65_merged_hg38-and-mm10_unique_hg38_centered_flank_30_0_59.bigwig
+        pt65_merged_cf_30_0_69: data/cfDNA/inhouse_smk/bigwigs/hg38/pt65_merged_hg38-and-mm10_unique_hg38_centered_flank_30_0_69.bigwig
+        pt65_merged_cf_30_0_79: data/cfDNA/inhouse_smk/bigwigs/hg38/pt65_merged_hg38-and-mm10_unique_hg38_centered_flank_30_0_79.bigwig
+        pt65_merged_cf_30_60_80: data/cfDNA/inhouse_smk/bigwigs/hg38/pt65_merged_hg38-and-mm10_unique_hg38_centered_flank_30_60_80.bigwig
+        pt65_merged_cf_30_130_180: data/cfDNA/inhouse_smk/bigwigs/hg38/pt65_merged_hg38-and-mm10_unique_hg38_centered_flank_30_130_180.bigwig
+       
+# fragment breakdown
+        pt65_merged_cf_30_35_45: data/cfDNA/inhouse_smk/bigwigs/hg38/pt65_merged_hg38-and-mm10_unique_hg38_centered_flank_30_35_45.bigwig 
+        pt65_merged_cf_30_40_49: data/cfDNA/inhouse_smk/bigwigs/hg38/pt65_merged_hg38-and-mm10_unique_hg38_centered_flank_30_40_49.bigwig 
+        pt65_merged_cf_30_50_59: data/cfDNA/inhouse_smk/bigwigs/hg38/pt65_merged_hg38-and-mm10_unique_hg38_centered_flank_30_50_59.bigwig 
+        pt65_merged_cf_30_60_69: data/cfDNA/inhouse_smk/bigwigs/hg38/pt65_merged_hg38-and-mm10_unique_hg38_centered_flank_30_60_69.bigwig
+    ih02_to_mcf7:
+        ih02_to_mcf7_0_70: data/cfDNA/IH02/combined_bed/bigWigs/IH02_pairs_sampled_173700471_iter_1_0_70.bigwig
+        ih02_to_mcf7_71_100: data/cfDNA/IH02/combined_bed/bigWigs/IH02_pairs_sampled_173700471_iter_1_71_100.bigwig
+        ih02_to_mcf7_141_170: data/cfDNA/IH02/combined_bed/bigWigs/IH02_pairs_sampled_173700471_iter_1_141_170.bigwig
+        ih02_to_mcf7_125_170: data/cfDNA/IH02/combined_bed/bigWigs/IH02_pairs_sampled_173700471_iter_1_125_170.bigwig
+    ih02: 
+        ih02_0_50: data/cfDNA/IH02/combined_bed/bigWigs/fragment_length_0_50_IH02.bigwig
+        ih02_0_70: data/cfDNA/IH02/combined_bed/bigWigs/fragment_length_0_70_IH02.bigwig
+        ih02_71_100: data/cfDNA/IH02/combined_bed/bigWigs/fragment_length_71_100_IH02.bigwig
+        ih02_141_170: data/cfDNA/IH02/combined_bed/bigWigs/fragment_length_141_170_IH02.bigwig
+        ih02_125_170: data/cfDNA/IH02/combined_bed/bigWigs/fragment_length_125_170_IH02.bigwig
+        ih02_0_49: data/cfDNA/IH02/combined_bed/bigWigs/fragment_length_0_49_IH02.bigwig
+        ih02_0_59: data/cfDNA/IH02/combined_bed/bigWigs/fragment_length_0_59_IH02.bigwig
+        ih02_0_69: data/cfDNA/IH02/combined_bed/bigWigs/fragment_length_0_69_IH02.bigwig
+        ih02_0_79: data/cfDNA/IH02/combined_bed/bigWigs/fragment_length_0_79_IH02.bigwig
+        ih02_60_80: data/cfDNA/IH02/combined_bed/bigWigs/fragment_length_60_80_IH02.bigwig
+        ih02_130_180: data/cfDNA/IH02/combined_bed/bigWigs/fragment_length_130_180_IH02.bigwig
+        
+        ih02_cf_30_0_59: data/cfDNA/IH02/combined_bed/bigWigs/IH02_pairs.bed_centered_flank_30_0_59.bigwig
+        ih02_cf_30_0_69: data/cfDNA/IH02/combined_bed/bigWigs/IH02_pairs.bed_centered_flank_30_0_69.bigwig
+        ih02_cf_10_0_79: data/cfDNA/IH02/combined_bed/bigWigs/IH02_pairs.bed_centered_flank_10_0_79.bigwig
+        ih02_cf_20_0_79: data/cfDNA/IH02/combined_bed/bigWigs/IH02_pairs.bed_centered_flank_20_0_79.bigwig
+        ih02_cf_30_0_79: data/cfDNA/IH02/combined_bed/bigWigs/IH02_pairs.bed_centered_flank_30_0_79.bigwig
+        ih02_cf_10_130_180: data/cfDNA/IH02/combined_bed/bigWigs/IH02_pairs.bed_centered_flank_10_130_180.bigwig
+        ih02_cf_20_130_180: data/cfDNA/IH02/combined_bed/bigWigs/IH02_pairs.bed_centered_flank_20_130_180.bigwig
+        ih02_cf_30_130_180: data/cfDNA/IH02/combined_bed/bigWigs/IH02_pairs.bed_centered_flank_30_130_180.bigwig
+# fragment breakdown  
+        ih02_cf_30_80_89 : data/cfDNA/IH02/combined_bed/bigWigs/IH02_pairs.bed_centered_flank_30_80_89.bigwig         
+        ih02_cf_30_65_74 : data/cfDNA/IH02/combined_bed/bigWigs/IH02_pairs.bed_centered_flank_30_65_74.bigwig         
+        ih02_cf_30_50_59 : data/cfDNA/IH02/combined_bed/bigWigs/IH02_pairs.bed_centered_flank_30_50_59.bigwig
+    ic35: 
+        ic35_0_50: data/cfDNA/IC35/combined_bed/bigWigs/fragment_length_0_50_IC35.bigwig
+        ic35_0_70: data/cfDNA/IC35/combined_bed/bigWigs/fragment_length_0_70_IC35.bigwig
+        ic35_71_100: data/cfDNA/IC35/combined_bed/bigWigs/fragment_length_71_100_IC35.bigwig
+        ic35_141_170: data/cfDNA/IC35/combined_bed/bigWigs/fragment_length_141_170_IC35.bigwig
+        ic35_125_170: data/cfDNA/IC35/combined_bed/bigWigs/fragment_length_125_170_IC35.bigwig
+        ic35_0_49: data/cfDNA/IC35/combined_bed/bigWigs/fragment_length_0_49_IC35.bigwig
+        ic35_0_59: data/cfDNA/IC35/combined_bed/bigWigs/fragment_length_0_59_IC35.bigwig
+        ic35_0_69: data/cfDNA/IC35/combined_bed/bigWigs/fragment_length_0_69_IC35.bigwig
+        ic35_0_79: data/cfDNA/IC35/combined_bed/bigWigs/fragment_length_0_79_IC35.bigwig
+        ic35_60_80: data/cfDNA/IC35/combined_bed/bigWigs/fragment_length_60_80_IC35.bigwig
+        ic35_130_180: data/cfDNA/IC35/combined_bed/bigWigs/fragment_length_130_180_IC35.bigwig 
+        
+        ic35_cf_30_0_59: data/cfDNA/IC35/combined_bed/bigWigs/IC35_pairs.bed_centered_flank_30_0_59.bigwig
+        ic35_cf_30_0_69: data/cfDNA/IC35/combined_bed/bigWigs/IC35_pairs.bed_centered_flank_30_0_69.bigwig
+        ic35_cf_30_0_79: data/cfDNA/IC35/combined_bed/bigWigs/IC35_pairs.bed_centered_flank_30_0_79.bigwig
+        ic35_cf_30_130_180: data/cfDNA/IC35/combined_bed/bigWigs/IC35_pairs.bed_centered_flank_30_130_180.bigwig
+# fragment breakdown 
+        ic35_cf_30_45_54: data/cfDNA/IC35/combined_bed/bigWigs/IC35_pairs.bed_centered_flank_30_45_54.bigwig
+        ic35_cf_30_60_69: data/cfDNA/IC35/combined_bed/bigWigs/IC35_pairs.bed_centered_flank_30_60_69.bigwig
+        ic35_cf_30_75_84: data/cfDNA/IC35/combined_bed/bigWigs/IC35_pairs.bed_centered_flank_30_75_84.bigwig
+
+    ic15: 
+        ic15_0_49: data/cfDNA/IC15/combined_bed/bigWigs/fragment_length_0_49_IC15.bigwig
+        ic15_0_59: data/cfDNA/IC15/combined_bed/bigWigs/fragment_length_0_59_IC15.bigwig
+        ic15_0_69: data/cfDNA/IC15/combined_bed/bigWigs/fragment_length_0_69_IC15.bigwig
+        ic15_0_79: data/cfDNA/IC15/combined_bed/bigWigs/fragment_length_0_79_IC15.bigwig
+        ic15_60_80: data/cfDNA/IC15/combined_bed/bigWigs/fragment_length_60_80_IC15.bigwig
+        ic15_130_180: data/cfDNA/IC15/combined_bed/bigWigs/fragment_length_130_180_IC15.bigwig
+        
+        ic15_cf_30_0_59: data/cfDNA/IC15/combined_bed/bigWigs/IC15_pairs.bed_centered_flank_30_0_59.bigwig
+        ic15_cf_30_0_69: data/cfDNA/IC15/combined_bed/bigWigs/IC15_pairs.bed_centered_flank_30_0_69.bigwig
+        ic15_cf_30_0_79: data/cfDNA/IC15/combined_bed/bigWigs/IC15_pairs.bed_centered_flank_30_0_79.bigwig
+        ic15_cf_30_130_180: data/cfDNA/IC15/combined_bed/bigWigs/IC15_pairs.bed_centered_flank_30_130_180.bigwig
+
+    ic17: 
+        ic17_0_49: data/cfDNA/IC17/combined_bed/bigWigs/fragment_length_0_49_IC17.bigwig
+        ic17_0_59: data/cfDNA/IC17/combined_bed/bigWigs/fragment_length_0_59_IC17.bigwig
+        ic17_0_69: data/cfDNA/IC17/combined_bed/bigWigs/fragment_length_0_69_IC17.bigwig
+        ic17_0_79: data/cfDNA/IC17/combined_bed/bigWigs/fragment_length_0_79_IC17.bigwig
+        ic17_60_80: data/cfDNA/IC17/combined_bed/bigWigs/fragment_length_60_80_IC17.bigwig
+        ic17_130_180: data/cfDNA/IC17/combined_bed/bigWigs/fragment_length_130_180_IC17.bigwig
+        
+        ic17_cf_30_0_59: data/cfDNA/IC17/combined_bed/bigWigs/IC17_pairs.bed_centered_flank_30_0_59.bigwig
+        ic17_cf_30_0_69: data/cfDNA/IC17/combined_bed/bigWigs/IC17_pairs.bed_centered_flank_30_0_69.bigwig
+        ic17_cf_30_0_79: data/cfDNA/IC17/combined_bed/bigWigs/IC17_pairs.bed_centered_flank_30_0_79.bigwig
+        ic17_cf_30_130_180: data/cfDNA/IC17/combined_bed/bigWigs/IC17_pairs.bed_centered_flank_30_130_180.bigwig
+
+    ic20: 
+        ic20_0_49: data/cfDNA/IC20/combined_bed/bigWigs/fragment_length_0_49_IC20.bigwig
+        ic20_0_59: data/cfDNA/IC20/combined_bed/bigWigs/fragment_length_0_59_IC20.bigwig
+        ic20_0_69: data/cfDNA/IC20/combined_bed/bigWigs/fragment_length_0_69_IC20.bigwig
+        ic20_0_79: data/cfDNA/IC20/combined_bed/bigWigs/fragment_length_0_79_IC20.bigwig
+        ic20_60_80: data/cfDNA/IC20/combined_bed/bigWigs/fragment_length_60_80_IC20.bigwig
+        ic20_130_180: data/cfDNA/IC20/combined_bed/bigWigs/fragment_length_130_180_IC20.bigwig
+        
+        ic20_cf_30_0_59: data/cfDNA/IC20/combined_bed/bigWigs/IC20_pairs.bed_centered_flank_30_0_59.bigwig
+        ic20_cf_30_0_69: data/cfDNA/IC20/combined_bed/bigWigs/IC20_pairs.bed_centered_flank_30_0_69.bigwig
+        ic20_cf_30_0_79: data/cfDNA/IC20/combined_bed/bigWigs/IC20_pairs.bed_centered_flank_30_0_79.bigwig
+        ic20_cf_30_130_180: data/cfDNA/IC20/combined_bed/bigWigs/IC20_pairs.bed_centered_flank_30_130_180.bigwig
+
+    ic37: 
+        ic37_0_49: data/cfDNA/IC37/combined_bed/bigWigs/fragment_length_0_49_IC37.bigwig
+        ic37_0_59: data/cfDNA/IC37/combined_bed/bigWigs/fragment_length_0_59_IC37.bigwig
+        ic37_0_69: data/cfDNA/IC37/combined_bed/bigWigs/fragment_length_0_69_IC37.bigwig
+        ic37_0_79: data/cfDNA/IC37/combined_bed/bigWigs/fragment_length_0_79_IC37.bigwig
+        ic37_60_80: data/cfDNA/IC37/combined_bed/bigWigs/fragment_length_60_80_IC37.bigwig
+        ic37_130_180: data/cfDNA/IC37/combined_bed/bigWigs/fragment_length_130_180_IC37.bigwig
+        
+        ic37_cf_30_0_59: data/cfDNA/IC37/combined_bed/bigWigs/IC37_pairs.bed_centered_flank_30_0_59.bigwig
+        ic37_cf_30_0_69: data/cfDNA/IC37/combined_bed/bigWigs/IC37_pairs.bed_centered_flank_30_0_69.bigwig
+        ic37_cf_30_0_79: data/cfDNA/IC37/combined_bed/bigWigs/IC37_pairs.bed_centered_flank_30_0_79.bigwig
+        ic37_cf_30_130_180: data/cfDNA/IC37/combined_bed/bigWigs/IC37_pairs.bed_centered_flank_30_130_180.bigwig
+
+ 
+
+bedgz_length_column:
+    mcf7_merged: 4
+    pt65_merged: 4
+    pt4_merged: 4
+    ih02: 5
+    ic35: 5
+    ic15: 5
+    ic17: 5
+    ic20: 5
+    ic37: 5
+    young_inh_healthy: 4
+    old_inh_healthy: 4
+chip_bigwigs:
+    GM_ATAC: data/geo/buenrostro_jd_et_al_nature_methods_2013/mapped/SRR891268_chrM_removed_pe.bigwig
+    GM_ENCFF289XSX: data/encode/pu.1/ENCFF289XSX.bigWig 
+    lyl1_gse63484: data/geo/gse63484_chen_et_al_genes_dev_2015/ip_over_input/Kasumi_LYL1_ChIP_seq_se_by_Kasumi_input_DNA_se.bigwig 
+    
+    GM_ENCFF578TBN: data/encode/ctcf/ENCFF578TBN.bigWig
+    mcf7_ENCFF606YFS: data/encode/ctcf/ENCFF606YFS.bigWig 
+    foxa1_mcf7_cnr: softlinks/foxa1_len_dist/input_bed/inhouse_cutnrun_foxa1/MCF7_E2_FOXA1_peak.bigwig
+    er_cutnrun: projects/cfDNA-TF-footprints/TFs/ER/ChIP/er_len_dist/cutnrun_bigwig/MCF7_ER_E2_peak.bigwig     
+    ENCFF000VME_mnase: data/encode/mnase_seq/gm12878/ENCFF000VME-hg38.bigwig
+    ENCFF324NQZ_rep2: data/encode/pu.1/ENCFF324NQZ_rep2.bigWig
+    ENCFF760FKR_rep3: data/encode/pu.1/ENCFF760FKR_rep3.bigWig
+    foxa1_cnr_etoh: projects/cfDNA-TF-footprints/TFs/PU.1/ChIP/pu1_len_dist/inhouse_cnr_data/foxa1/wig_and_bw/MCF7_EtOH_FOXA1_peak.bigwig 
+    foxm1_ENCSR000BRU: data/encode/foxm1/raw_data/gm12878/gm12878_pulldown_by_control.bigwig
+    foxk2_ENCFF291BKK: data/encode/foxk2/ENCFF291BKK.bigWig
+    GM_ATAC_ENCFF487LOB: data/encode/esr1/atac_seq/ENCFF487LOB.bigWig
+    GM_ATAC_ENCFF948GBJ: data/encode/esr1/atac_seq/ENCFF948GBJ.bigWig
+    mcf7_ATAC_ENCFF782BVX: data/encode/esr1/atac_seq/ENCFF782BVX.bigWig
+    
+chip_bxplt_tfbs_flank:
+    GM_ATAC: 300 # usually this value for ChIP/ATAC
+    GM_ENCFF289XSX: 300
+    mm10_pu1: 300
+    lyl1_gse63484: 300
+    GM_ENCFF578TBN: 300
+    foxa1_mcf7_cnr: 50
+    er_cutnrun: 50
+    mcf7_ENCFF606YFS: 300
+    foxm1_ENCSR000BRU: 300
+    foxk2_ENCFF291BKK: 300
+    GM_ATAC_ENCFF487LOB: 300
+    GM_ATAC_ENCFF948GBJ: 300
+    mcf7_ATAC_ENCFF782BVX: 300 
+    ENCFF324NQZ_rep2: 300
+    ENCFF760FKR_rep3: 300
+
+    
+do_log:
+    GM_ATAC: 1
+    ER_POS_ATAC: 1
+    GM_ENCFF289XSX: 1
+    ENCFF636WAD_pax5: 1  # because it is from ENCODE 
+    lyl1_gse63484: 0
+    GM_ENCFF578TBN: 1
+    foxa1_mcf7_cnr: 0 
+    er_cutnrun: 0
+    mcf7_ENCFF606YFS: 1
+    foxm1_ENCSR000BRU: 1
+    foxk2_ENCFF291BKK: 1
+    GM_ATAC_ENCFF487LOB: 1
+    GM_ATAC_ENCFF948GBJ: 1
+    mcf7_ATAC_ENCFF782BVX: 1
+    ENCFF324NQZ_rep2: 1
+    ENCFF760FKR_rep3: 1
+    
+    
+source_annotation: 
+    GM_ENCFF289XSX: "GM12878 Cell line"
+    GM_ATAC: "GM12878 ATAC"
+    ER_POS_ATAC: "ER+ (TCGA) ATAC" 
+    lyl1_gse63484: "LYL1(GSE63484)"
+    GM_ENCFF578TBN: "GM12878"
+    foxa1_mcf7_cnr: "FOXA1(MCF7-E2)"
+    er_cutnrun: "ER(MCF7-E2)"
+    ENCFF000VME_manse: "MNase(GM12878)"
+    ENCFF324NQZ_rep2: "PU1(rep2-NQZ)"
+    ENCFF760FKR_rep3: "PU1(rep-FKR)"
+    mcf7_ENCFF606YFS: "CTCF(MCF7)"
+    foxm1_ENCSR000BRU: "FOXM1(GM)"
+    foxk2_ENCFF291BKK: "FOXK2(GM)"
+    GM_ATAC_ENCFF487LOB: "ATAC (GM-ENCFF487LOB)"
+    GM_ATAC_ENCFF948GBJ: "ATAC (GM-ENCFF948GBJ)"
+    mcf7_ATAC_ENCFF782BVX: "ATAC (MCF-7-ENCFF782BVX)"
+
+    
+cluster_id_annotation: 
+    "1": "1"
+    "2": "2"
+    "3": "3"
+    "4": "4"
+plot_chip_params:
+    min_value: 0
+    max_value: 5
+    50bp_foxa1_e2_mcf7_th_04: {min_value: 100, max_value: 700, width: 6, height: 4}
+    50bp_foxa1_e2_mcf7_th_05: {min_value: "-1000", max_value: "-1000", width: 6, height: 6}
+    50bp_foxa1_e2_mcf7_th_06: {min_value: 100, max_value: 700, width: 6, height: 4}
+    50bp_foxa1_e2_mcf7_th_08: {min_value: 100, max_value: 700, width: 6, height: 4}
+    50bp_er_e2_mcf7_th_04: {min_value: 50, max_value: 400, width: 6, height: 6}
+    50bp_er_e2_mcf7_th_05: {min_value: "-1000", max_value: "-1000", width: 6, height: 6}
+    50bp_er_e2_mcf7_th_06: {min_value: 50, max_value: 400, width: 6, height: 4}
+    50bp_er_e2_mcf7_th_08: {min_value: 50, max_value: 400, width: 6, height: 4}
+    50bp_encode_accepted_chrom_chrY_removed_non_overlapping: {min_value: "-1000", max_value: "-1000",  width: 8, height: 12} 
+    50bp_lyl1_non_overlapping_chrY_removed: {min_value: "-1000", max_value: "-1000",  width: 8, height: 6} 
+    50bp_pu1_q_30_nooverlap: {min_value: "-1000", max_value: "-1000",  width: 8, height: 12}
+    50bp_pu1_q_25_nooverlap: {min_value: "-1000", max_value: "-1000",  width: 8, height: 12}
+    50bp_pu1_q_20_nooverlap: {min_value: "-1000", max_value: "-1000",  width: 8, height: 12}
+    50bp_pu1_q_15_nooverlap: {min_value: "-1000", max_value: "-1000",  width: 6, height: 4}
+    50bp_pu1_q_10_nooverlap: {min_value: "-1000", max_value: "-1000",  width: 6, height: 4}
+    50bp_pu1_q_05_nooverlap: {min_value: "-1000", max_value: "-1000",  width: 6, height: 4}
+    50bp_pu1_q_01_nooverlap: {min_value: "-1000", max_value: "-1000",  width: 6, height: 4}
+    50bp_pu1_q_001_nooverlap: {min_value: "-1000", max_value: "-1000",  width: 6, height: 4}
+    50bp_ENCFF705QAK_rep2_non_overlapping: {min_value: "-1000", max_value: "-1000",  width: 6, height: 6}
+    50bp_wo_pt4_er_th_05: {min_value: "-1000", max_value: "-1000",  width: 6, height: 6}
+    50bp_unique_carroll_encode_chrY_removed_non_overlapping: {min_value: "-1000", max_value: "-1000",  width: 6, height: 8}
+    50bp_w_pt4_er_th_05: {min_value: "-1000", max_value: "-1000",  width: 8, height: 12}
+    #50bp_ENCFF705QAK_rep2_non_overlapping_c: {min_value: "-4", max_value: "4",  width: 6, height: 6}
+    50bp_wo_pt4_foxa1_th_05: {min_value: "-1000", max_value: "-1000",  width: 6, height: 6}
+    50bp_w_pt4_foxa1_th_05: {min_value: "-1000", max_value: "-1000",  width: 8, height: 12}
+    50bp_subsampled_wo_pt4_er_th_05 : {min_value: "-1000", max_value: "-1000",  width: 6, height: 6}
+    50bp_subsampled_wo_pt4_foxa1_th_05 : {min_value: "-1000", max_value: "-1000",  width: 6, height: 6}
+    50bp_lyl1_common_for_dilution : {min_value: "-1000", max_value: "-1000",  width: 6, height: 6}
+    50bp_pu1_common_for_dilution : {min_value: "-1000", max_value: "-1000",  width: 6, height: 6}
+    50bp_ctcf_common_for_dilution : {min_value: "-1000", max_value: "-1000",  width: 6, height: 6}
+    50bp_lyl1_remap_non_overlapping: {min_value: "-1000", max_value: "-1000",  width: 8, height: 6}
+    50bp_pu1_encode_peaks_non_overlapping: {min_value: "-1000", max_value: "-1000",  width: 8, height: 6}
+    50bp_ctcf_enc_carroll_etoh_non_overlapping: {min_value: "-1000", max_value: "-1000",  width: 6, height: 8}
+    50bp_lyl1_remap_common: {min_value: "-1000", max_value: "-1000",  width: 6, height: 6}
+    50bp_pu1_encode_peaks_common: {min_value: "-1000", max_value: "-1000",  width: 6, height: 6}
+    50bp_ctcf_enc_carroll_etoh_common: {min_value: "-1000", max_value: "-1000",  width: 6, height: 6}
+    50bp_er_th_05_common_young_inh:  {min_value: "-1000", max_value: "-1000",  width: 6, height: 6}
+    50bp_foxa1_th_05_common_young_inh:  {min_value: "-1000", max_value: "-1000",  width: 6, height: 6}
+    50bp_er_e2_mcf7_th_05: {min_value: "-1000", max_value: "-1000",  width: 6, height: 6}
+    50bp_foxa1_e2_mcf7_th_05: {min_value: "-1000", max_value: "-1000",  width: 6, height: 6}
+   
+    50bp_er_etoh_mcf7_th_05: {min_value: "-1000", max_value: "-1000",  width: 6, height: 6}
+    50bp_foxa1_etoh_mcf7_th_05: {min_value: "-1000", max_value: "-1000",  width: 6, height: 6}
+    
+    50bp_wo_pt4_er_etoh_mcf7_th_05: {min_value: "-1000", max_value: "-1000",  width: 6, height: 6} 
+    50bp_wo_pt4_foxa1_etoh_mcf7_th_05: {min_value: "-1000", max_value: "-1000",  width: 6, height: 6}
+    50bp_er_carroll_encode_non_overlapping: {min_value: "-1000", max_value: "-1000",  width: 6, height: 6}
+    50bp_foxa1_carroll_encode_non_overlapping: {min_value: "-1000", max_value: "-1000",  width: 6, height: 6}
+
+   
+
+    
+    
+cluster_colors:  
+
+    "1" : "\"#d95f0e\""
+    "2" : "\"#fec44f\""
+    "3" : "\"#f768a1\""
+    "4" : "\"#bcbddc\""
+    "5" : "\"#756bb1\""
+    "6" : "\"#54278f\""
+
+
+#    "1" : "\"#1b9e77\""
+#    "2" : "\"#d95f02\""
+#    "3" : "\"#7570b3\""
+#    "4" : "\"#e7298a\""
+#    "5" : "\"#66a61e\""
+#    "6" : "\"#e6ab02\""
+
+
+    #"1" : "\"#7fc97f\""
+    #"2" : "\"#beaed4\""
+    #"3" : "\"#fdc086\""
+    #"4" : "\"#ffcc00\""
+    #"5" : "\"#386cb0\""
+    #"6" : "\"#f0027f\""
+
+
+
+#    "1": "\"#F8766D\""
+#    "2": "\"#D89000\""
+#    "3": "\"#A3A500\""
+#    "4": "\"#39B600\""
+#    "5": "\"#00BF7D\""
+#    "6": "\"#00BFC4\""
+#    "7": "\"#00B0F6\""
+#    "8": "\"#9590FF\""
+#    "9": "\"#E76BF3\""
+#    "10": "\"#FF62BC\""
+    "7": "\"#00B0F6\""
+    "8": "\"#9590FF\""
+    "9": "\"#E76BF3\""
+    "10": "\"#FF62BC\""
+vplot_cbra_limits:
+    mcf7_merged: 20
+    pt65_merged: 20
+    pt4_merged: 20
+    ih02: 50
+    ic35: 50
+    ic15: 50
+    ic17: 50
+    ic20: 50 
+    ic37: 50
+cnr_vplot_cbra_limits:
+    mcf7_merged: 5
+    pt65_merged: 5
+    pt4_merged: 5
+    ih02: 5
+    ic35: 5
+subtract_significant_sites: 
+    50bp_common_er_inh_cnr:
+        breast:
+            sample: ["mcf7_merged", "pt65_merged"]
+            significant_cl: [[1,2,3,4,5], [1,2,3,4,5], ]
+        healthy:
+            sample: ["ih02",]
+            significant_cl: [[1,2],]
+    50bp_common_er: 
+        mcf7_merged: 
+            sample: ["mcf7_merged"]
+            significant_cl: [[1,2,3,4], ] 
+        ih02:
+            sample: ["ih02"]
+            significant_cl: [[1,2,3], ] 
+    50bp_common_foxa1: 
+        mcf7_merged: 
+            sample: ["mcf7_merged"]
+            significant_cl: [[1,2,3,4], ] 
+        ih02:
+            sample: ["ih02"]
+            significant_cl: [[1,2], ] 
+      
+
+
+cnr_bedgz_annotation:
+    mcf7_e2_foxa1: "inhouse_cnr_data/foxa1/mcf7_e2_foxa1.bed" 
+    mcf7_e2_er: "inhouse_cnr_data/er/mcf7_e2_er.bed" 
+cnr_bedgz_length_column:
+    mcf7_e2_foxa1: 4
+    mcf7_e2_er: 4
+cnr_plot_arrangment:
+    layout1: [50, 100, 150, 200] 
+
+simplified_labels:
+    ctcf_enc_carroll_etoh_non_overlapping: "CTCF"
+    pu1_encode_peaks_non_overlapping: "PU.1"    
+    lyl1_remap_non_overlapping: "LYL1"
+    er_e2_mcf7_th_05: "ER" 
+    foxa1_e2_mcf7_th_05: "FOXA1"
+
